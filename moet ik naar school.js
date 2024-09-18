@@ -1,12 +1,11 @@
-const huidigeDag= "zaterdag";
-const schooldag1= "maandag";
-const schooldag2= "dinsdag";
-const schooldag3= "woendag";
-const schooldag4= "donderdag";
-const schooldag5= "vrijdag";
+const vandaag = new Date();
+const huidigedag = vandaag.getDay();
 
-if(huidigeDag == schooldag1 || huidigeDag== schooldag2 || huidigeDag== schooldag3 || huidigeDag== schooldag4 || huidigeDag== schooldag5){
-    console.log("Ik moet naar school");
-} else {
-    console.log("Lekker uitslapen!");
-}
+if (huidigedag === 0){
+    console.log("het is zondag lekker uitslapen")
+ } else if (huidigedag === 6){
+    console.log("het is zaterdag lekker uitslapen")
+ }
+    else{
+        console.log("we moeten naar scorro")
+    }
